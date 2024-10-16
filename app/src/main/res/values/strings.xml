@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DAMEP_ABM</string>
+    <string name="button_primero">Ingresar</string>
+    <string name="textview_segundo">Crear cuenta</string>
 </resources>
