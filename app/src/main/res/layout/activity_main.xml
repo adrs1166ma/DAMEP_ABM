@@ -10,13 +10,15 @@
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="343dp"
-        android:layout_height="455dp"
-        android:layout_marginTop="100dp"
-        android:background="#FFFFFF"
+        android:layout_width="307dp"
+        android:layout_height="419dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/frame_rounded_white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageViewLogo">
+        app:layout_constraintTop_toBottomOf="@+id/miImagen">
 
 
     </FrameLayout>
@@ -35,136 +37,152 @@
         android:id="@+id/txt_titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="Bienvenido(a)"
-        android:textSize="34sp"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/frameLayout"
         app:layout_constraintStart_toStartOf="@+id/frameLayout"
-        app:layout_constraintTop_toBottomOf="@+id/miImagen" />
+        app:layout_constraintTop_toTopOf="@+id/frameLayout" />
 
     <EditText
         android:id="@+id/contraseña"
         android:layout_width="231dp"
         android:layout_height="55dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_rounded"
         android:drawableEnd="@drawable/baseline_remove_red_eye_24"
         android:ems="10"
         android:hint="Contraseña"
         android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout"
         app:layout_constraintTop_toBottomOf="@+id/documento" />
 
     <Button
         android:id="@+id/button_primero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="234dp"
+        android:layout_height="48dp"
         android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:backgroundTint="#009688"
         android:text="@string/button_primero"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout"
         app:layout_constraintTop_toBottomOf="@+id/contraseña" />
 
     <Button
         android:id="@+id/textView_segundo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_width="239dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:backgroundTint="#009688"
         android:text="@string/textview_segundo"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout"
         app:layout_constraintTop_toBottomOf="@+id/pregunta2" />
 
     <TextView
         android:id="@+id/pregunta1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_height="48dp"
+        android:autoLink="none"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp"
         android:text="¿Ovidaste tu contraseña?"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_blue_light"
+        android:textColorLink="@android:color/holo_blue_light"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout"
         app:layout_constraintTop_toBottomOf="@+id/button_primero" />
 
     <TextView
         android:id="@+id/pregunta2"
         android:layout_width="227dp"
         android:layout_height="38dp"
-        android:layout_marginTop="24dp"
         android:gravity="center"
         android:text="¿Aún no tienes una cuenta EsSalud Mi Consulta?"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout"
         app:layout_constraintTop_toBottomOf="@+id/pregunta1" />
 
     <FrameLayout
         android:id="@+id/frameLayout3"
-        android:layout_width="353dp"
+        android:layout_width="wrap_content"
         android:layout_height="44dp"
-        android:layout_marginTop="8dp"
-        android:background="#2196F3"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/frame_rounded"
+        android:elevation="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout">
 
+        <TextView
+            android:id="@+id/Comentario1"
+            android:layout_width="355dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="Consultas al 3500800 Opción 2 para Lima y Callao. "
+            android:textColor="#FFFFFF" />
     </FrameLayout>
-
-    <TextView
-        android:id="@+id/Comentario1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:gravity="center"
-        android:text="Consultas al 3500800 Opción 2 para Lima y Callao. "
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/frameLayout3"
-        app:layout_constraintStart_toStartOf="@+id/frameLayout3"
-        app:layout_constraintTop_toBottomOf="@+id/textView_segundo" />
 
     <FrameLayout
         android:id="@+id/frameLayout2"
-        android:layout_width="354dp"
-        android:layout_height="73dp"
-        android:layout_marginTop="8dp"
-        android:background="#2196F3"
+        android:layout_width="356dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/frame_rounded"
+        android:elevation="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout3">
 
+        <TextView
+            android:id="@+id/Comentario2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Provincias a EsSalud en Línea de la Red de su región (http://www.essalud.gob.pe/essalud-en -linea"
+            android:textColor="#FFFFFF" />
     </FrameLayout>
-
-    <TextView
-        android:id="@+id/Comentario2"
-        android:layout_width="338dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="5dp"
-        android:gravity="center"
-        android:text="Provincias a EsSalud en Línea de la Red de su región (http://www.essalud.gob.pe/essalud-en -linea"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/frameLayout2"
-        app:layout_constraintStart_toStartOf="@+id/frameLayout2"
-        app:layout_constraintTop_toTopOf="@+id/frameLayout2" />
 
     <EditText
         android:id="@+id/documento"
         android:layout_width="231dp"
         android:layout_height="49dp"
+        android:layout_margin="16dp"
         android:layout_marginTop="25dp"
+        android:background="@drawable/edittext_rounded"
         android:ems="10"
         android:hint="Documento de identidad"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout"
         app:layout_constraintTop_toBottomOf="@+id/txt_titulo" />
 
     <ImageView
         android:id="@+id/miImagen"
-        android:layout_width="258dp"
-        android:layout_height="88dp"
+        android:layout_width="200dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
         android:src="@drawable/logo_miconsulta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageViewLogo" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

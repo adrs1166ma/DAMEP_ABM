@@ -7,6 +7,7 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -23,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         // Configuración del texto "Crear Cuenta"
         TextView tv2 = findViewById(R.id.textView_segundo);
         tv2.setOnClickListener(view -> Toast.makeText(this, "Crear Cuenta", Toast.LENGTH_SHORT).show());
+
+
+
     }
 }
 
